@@ -1,0 +1,5 @@
+# Landscape images Links for carousel
+
+https://wowslider.com/sliders/demo-93/data1/images/lake.jpg
+https://picsum.photos/1024/480/?image=54
+https://wowslider.com/sliders/demo-93/data1/images/landscape.jpg
