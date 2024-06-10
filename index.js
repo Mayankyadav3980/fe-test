@@ -1,8 +1,16 @@
 var a = 1;
-var a = 3
-function test(){
-    let a = 2;
-    console.log(a);
+
+function test1(){
+    let b = 2;
+    let test2 = function(){
+        let c = 3;
+        console.log(a,b,c);
+        c++;
+    }
+    return test2;
 }
-test();
-console.log(a);
+let test2 = test1();
+test2();
+ test2 = test1();
+test2();
+// console.log(a);
