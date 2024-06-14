@@ -1,16 +1,16 @@
-var a = 1;
-
-function test1(){
-    let b = 2;
-    let test2 = function(){
-        let c = 3;
-        console.log(a,b,c);
-        c++;
+function makeArmy() {
+    let shooters = [];
+    let i = 0;
+    while (i < 10) {
+      let shooter = function() {
+        console.log( i ); 
+      };
+      shooters.push(shooter);
+      i++;
     }
-    return test2;
-}
-let test2 = test1();
-test2();
- test2 = test1();
-test2();
-// console.log(a);
+    return shooters;
+  }
+  let army = makeArmy();
+  army[0]();
+  army[5]();
+  army[1]();
