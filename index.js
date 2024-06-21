@@ -1,8 +1,8 @@
-var joe = {
-  name: "Joe", 
-  hello: function(){
-    console.log(this);
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+  console.log(this.name);
+  // return;
   }
-}; 
-
-new (joe.hello.bind(joe))();
+  var user = User("Julie");
+  // console.log(user);
