@@ -1,22 +1,8 @@
-// var add = (function ( ) {
-//   var counter = 0;
-//   return function ( ) {
-//        counter += 1; 
-//        return counter;
-// }
-// })();    
-// console.log(add());
-// console.log(add());
-// console.log(add());
+var joe = {
+  name: "Joe", 
+  hello: function(){
+    console.log(this);
+  }
+}; 
 
-
-let fun = (function(){
-  var counter = 0;
-  // console.log("this is iifi " + counter );
-  return function(){
-    counter++;
-    return counter;
-  };
-})();
-
-console.log(fun());
+new (joe.hello.bind(joe))();
