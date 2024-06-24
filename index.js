@@ -1,8 +1,12 @@
-function User(name) {
-  this.name = name;
-  this.isAdmin = false;
-  console.log(this.name);
-  // return;
+function Constr(name){
+  // this.name = name;
+  this.printT = function(){
+    console.log('hi be calm');
   }
-  var user = User("Julie");
-  // console.log(user);
+}
+
+let obj1 = new Constr('may');
+var obj2 = new Constr('yad');
+
+console.log(Constr.hasOwnProperty.name);
+// console.log(obj2);
