@@ -1,12 +1,21 @@
-function Constr(name){
-  // this.name = name;
-  this.printT = function(){
-    console.log('hi be calm');
-  }
+function Student(id, name, club){
+  this.id = id ;
+  this.name = name ;
+  this.club = club ;
+ 
 }
 
-let obj1 = new Constr('may');
-var obj2 = new Constr('yad');
+Student.prototype.printDetails = function(){
+      console.log(this.id, this.name, this.club);
+  }
 
-console.log(Constr.hasOwnProperty.name);
-// console.log(obj2);
+var s1 = new Student(1,'Raj', 'Cricket');
+var s2 = new Student(2,'Rohan','Dance');
+var s3 = new Student(3,'Rita','Basketball');
+var s4 = new Student(4,'Reema','Music');
+
+var arr=[s1, s2, s3, s4];
+
+for(let ob of arr){
+    ob.printDetails();
+}
