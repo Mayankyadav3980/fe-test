@@ -1,9 +1,6 @@
-function test(obj){
-   obj = { name: 'abc'};
-  //  return obj;
-  console.log('funcn obj: ' + obj);
+"use strict"
+function bike() {
+    console.log(this.name);
 }
-
-var obj = { name: 'bcd'};
-test(obj);
-console.log(obj);
+var name = "Ninja";
+bike();
