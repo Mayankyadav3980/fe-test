@@ -11,3 +11,12 @@ let t1 =() =>{
     
 }
 t1();
+
+// const myFunction = () => {
+//     console.log(this);
+//   };
+  
+//   // call it
+//   myFunction();
+
+console.log(this);
