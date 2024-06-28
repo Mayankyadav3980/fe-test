@@ -1,6 +1,13 @@
-"use strict"
-function bike() {
-    console.log(this.name);
+let t1 =() =>{
+    console.log(this);
+    var t2=() =>{
+        console.log(this);
+        function t3() {
+            console.log(this);
+        }
+        t3();
+    }
+    t2();
+    
 }
-var name = "Ninja";
-bike();
+t1();
