@@ -1,11 +1,13 @@
-function x() {
-    // Promise.reject('x')
-    return Promise.resolve('y')
-  }
+x((a,b,c) => {
+    return a+b+c
+  },2,3,6)
   
-  async function log() {
-    const val =  await x()
-    console.log(val)
-  }
+  function x(callback,a,b,c) {
+    let str = ""
+    setTimeout(() => {
+      str += "x"
+    });
   
-  log()
+    str += callback(a,b,c)
+    console.log(str)
+  }
