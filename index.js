@@ -1,22 +1,11 @@
-let t1 =() =>{
-    console.log(this);
-    var t2=() =>{
-        console.log(this);
-        function t3() {
-            console.log(this);
-        }
-        t3();
-    }
-    t2();
-    
-}
-t1();
-
-// const myFunction = () => {
-//     console.log(this);
-//   };
+function x() {
+    // Promise.reject('x')
+    return Promise.resolve('y')
+  }
   
-//   // call it
-//   myFunction();
-
-console.log(this);
+  async function log() {
+    const val =  await x()
+    console.log(val)
+  }
+  
+  log()
