@@ -1,33 +1,22 @@
-// x( (a,b,c) => { return a+b+c }, 2,3,6 )
-//   var str = "";
-//   console.log(str);
-//   function x(callback,a,b,c) {
-    
-//     setTimeout(() => {
-//       str += "x"
-//     });
-  
-//     str += callback(a,b,c)
-//     console.log(str)
-//   }
-
-let x = "x";
-console.log(x);
-function fun (){
-  console.log(x + 11);
+const delay = (time) => {
+  // Write the logic here
 }
-fun();
+ 
+let count = function(){
+  let id = null;
+  let start = () {
+      let i=0;
+     id = setInterval(()=>{
+          console.log(i++);
+      })
+  }
+  
+  let stop = () => {
+      clearInterval(id);
+  }
+}
 
-
-// setTimeout(() => {
-//   console.log('a')
-// })
-
-// new Promise((resolve,reject) => {
-//   // setTimeout(() => {
-//   //   console.log('b')
-//   // })
-//   console.log('b');
-// })
-
-// console.log('c');
+count.start()
+setTimeout(() => {
+  count.stop()
+},6000)
