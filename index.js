@@ -1,5 +1,9 @@
-let a = 1;
-{
-   var a= 1;
+function foo(a){
+  function faa(b){
+      console.log(a+b); 
 }
-console.log(a);
+ faa;
+}
+
+// console.log(foo(2)(3));
+foo(3)(2);
