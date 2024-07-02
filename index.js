@@ -1,21 +1,28 @@
 const delay = (time) => {
   // Write the logic here
+  return new Promise((res,rej) => {
+      setTimeout(res,time);
+  })
 }
  
-let count = function(){
-  let id = null;
-  let start = () {
-      let i=0;
-     id = setInterval(()=>{
-          console.log(i++);
-      })
+let counter = () => {
+  let pause = false;
+  return{
+      start:  () => {
+        for(let i=0; ; i++){
+              if(pause)break;
+              console.log(i);
+              await delay(1000);
+          }
+      },
+
+       stop: () => {
+          pause = true;
+      }
   }
   
-  let stop = () => {
-      clearInterval(id);
-  }
 }
-
+let count = counter();
 count.start()
 setTimeout(() => {
   count.stop()
