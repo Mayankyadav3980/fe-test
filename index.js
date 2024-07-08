@@ -1,3 +1,9 @@
-let ar = [1, 2, 3, 4, 5];
-let nar = ar.map( ele => (ele * 10) );
-nar.forEach( x => console.log(x))
+function fun(a){
+  console.log(a);
+  console.log(typeof(a));
+}
+
+let a = 'abc';
+console.log(a);
+ console.log(typeof a);
+fun(a);
