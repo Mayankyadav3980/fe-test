@@ -9,3 +9,4 @@ console.log(a);
 fun(a);
 
 // this is nbranch code 
+// updated index.js on nbranch on github
