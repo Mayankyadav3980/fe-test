@@ -1,0 +1,29 @@
+
+.main{
+    display: flex;
+    border: 2px solid black;
+    /* height: 200px; */
+    /* align-items:flex-end; */
+}
+
+.main > *{
+    width: 300px;
+    height: 300px;
+    /* background-color: black; */
+}
+
+.fi1{
+    /* flex-grow: 1; */
+    flex-grow: 1;
+    background-color: red;
+}
+
+.fi2{
+    flex-grow: 1;
+    background-color: coral;
+}
+
+.fi3{
+    flex-grow: 1f;
+    background-color: cyan;
+}

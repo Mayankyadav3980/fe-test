@@ -1,17 +1,7 @@
-function fun(a){
-  console.log(a);
-  console.log(typeof(a));
+let obj = {
+    name: 'a',
+    age: 1
 }
-
-let a = 'abc';
-console.log(a);
- console.log(typeof a);
-fun(a);
-
-// this is nbranch code 
-// updated index.js on nbranch on github
-
-
-// trying fetch
-//trying fetching agian
-// updated main branch on github
+console.log(obj.meals);
+if(true){ console.log('inside if');}
+if(-1) {console.log('inside ud if');}
