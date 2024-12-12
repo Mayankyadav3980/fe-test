@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+   
+  </head>
+  <body>
+    <div class="container">
+        <div class="inner-cnt">
+            <div class="watch-display">
+        <span id="hr">0</span>
+        <span id="min">0</span>
+        <span id="sec">0</span>
+      </div>
+      <div class="btn-cnt">
+        <button id="srt" onclick="startWatch()" class="btn">Start/Pause</button>
+        <button id="srt" onclick="reset()" class="btn">Reset</button>
+        <button id="srt" onclick="split()" class="btn">Split</button>
+      </div>
+        </div>
+      
+    </div>
+     <script src="server.js" ></script>
+  </body>
+</html>
