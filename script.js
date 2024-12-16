@@ -16,6 +16,6 @@
 console.log(!{n:'a'});
 console.log(!!{});
 
-// if(-1)console.log('inside if');
+if(-1)console.log('inside if')
 
 
