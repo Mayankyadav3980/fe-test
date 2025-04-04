@@ -1,49 +1,71 @@
-let hr = document.getElementById("hr");
-let min = document.getElementById("min");
-let sec = document.getElementById("sec");
+// //1 way
+// function fun (){
+//     console.log("this is functon ");
+// }
 
-let flag = 0;
-let h = 0, m = 0, s = 0;
-let arr = [];
-let id;
-function startWatch() {
-  
-  let t = 0;
+// //2 way
 
-   id = setInterval(() => {
-    if (flag) {
-      
+// const fun = () => {
+//     console.log('arrow function');
+
+// }
+
+// //3rd way (function exp)
+// const fun = function (){
+//     console.log("third way")
+// }
+
+// function fun1 (){
+//     let x = 1;
+     
+//     return function fun2(){
+//         console.log(x);
+//     }
+// }
+
+// let fun = fun1();
+// fun();
+
+
+// let pr = new Promise((res, rej)=>{
+//     setTimeout(()=>{
+//         res('resolved')
+//     }, 5000)
+// })
+
+
+// pr.then((x)=>{
+//     console.log(x)
+// }).catch((e)=>{
+//     console.log('err', e)
+// })
+
+function fun(){
+    console.log(this);
+}
+
+// fun();
+
+var fun2 = function(){
+    console.log(this);
+}
+// fun2();
+
+var fun3 = () => {
+    console.log(this);
+    console.log("inside fun3")
+}
+// fun3();
+
+
+// fun dec, fun exp, arrow fun as methods
+
+
+const obj = {
+    name: "ShriHari",
+ function hello(){
+        console.log(this);
     }
-    t = t + 1;
-    sec.innerHTML = `${t}`;
-
-    if (t == 60) {
-      m = m + 1;
-      t = 0;
-      min.innerHTML = m;
-    }
-    if (m == 60) {
-      h = h + 1;
-      m = 0;
-      hr.innerHTML = h;
-    }
-  }, 1000);
 }
 
-function pause(){
-    clearInterval(id);
-}
-function reset() {
-//   flag = true;
-    clearInterval(id);
-  sec.innerHTML = "0";
-  min.innerHTML = "0";
-  hr.innerHTML = "0";
-  m=0;
-  h=0;
-  s=0;
-}
-
-function split() {
-
-}
+obj.fun();
